@@ -11,7 +11,7 @@ class Usuario{
      addMascotas(){
         this.mascotas.push("Perro", "Hamster", "Pato")
         console.log(this.mascotas)
-        console.log(`mi mascotas son  ${this.mascotas}`)
+        
     }
      countMascotas(){
         
@@ -21,23 +21,21 @@ class Usuario{
      addBook(){
             this.libros.push({ nombre: "Star Wars", autor: "Lucas"}, {nombre: "Gladiador", autor:" Pepe"})  
         console.log(this.libros)
+        
      }
 
      getBookNames(){
-        //console.log(this.libros.map((libro) => this.libros.nombre))
+        
         let nombreslibros = this.libros.map(libro=>{
             return (libro.nombre);
       } )
       console.log(nombreslibros)
     }
      
-        //return nombreslibros
-       // console.log(nombreslibros)
-     //}
+     
 }
 
 let usuario1 = new Usuario("Santiago", "Rodriguez",[],[])
-//usuario1.addBook([{ nombre: "Star Wars",autor: "Lucas"}])
 
 usuario1.getFullName()
 usuario1.addMascotas()
